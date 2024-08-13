@@ -7,27 +7,14 @@ struct node
 	struct node *next;
 };
 
-
+///////////////////////////////////////////
+*******************************************
+/////////////////////////////////////////
 int main()
 {
 	struct node *head,*newnode,*temp;
 	int choice=1;
 	head=NULL;
-	while(choice)
-	{
-		newnode=(struct node*)malloc(sizeof(struct node));
-		printf("Enter the Data:");
-		scanf("%d",&newnode->data);
-		newnode->next=NULL;
-		if(head==NULL)
-		{
-			head=temp=newnode;
-		}
-		else
-		{
-			temp->next=newnode;
-			temp=newnode;
-		}
 		printf("Do you want to create more nodes:");
 		scanf("%d",&choice);
 	}
@@ -39,4 +26,6 @@ int main()
 		temp=temp->next;
 	}
 }
-
+///////////////////////////////////////////
+****************************************************
+///////////////////////////////////////////////
